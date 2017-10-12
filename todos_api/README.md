@@ -11,3 +11,5 @@ and
 The first creates a mongod file in the todos_api folder.
 
 start server: `node index.js` from todos_api/ directory.
+
+...or `nodemon index.js` if you have nodemon installed (which automatically restarts the server, yay)
