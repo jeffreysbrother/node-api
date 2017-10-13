@@ -30,7 +30,7 @@ function addTodos(todos) {
 }
 
 function addTodo(todo) {
-	var newTodo = $('<li class="task">' + todo.name + '<span>x</span></li>');
+	let newTodo = $(`<li class="task">${todo.name}<span>x</span></li>`);
 	newTodo.data('id', todo._id);
 	newTodo.data('completed', todo.completed);
 	if (todo.completed) {
@@ -41,7 +41,7 @@ function addTodo(todo) {
 
 function createTodo() {
 	// send request to create new todo
-	var usrInput = $('#todoInput').val();
+	let usrInput = $('#todoInput').val();
 	$.post('/api/todos', {name: usrInput})
 	.then(function (newTodo) {
 		$('#todoInput').val('');
@@ -53,8 +53,8 @@ function createTodo() {
 }
 
 function removeTodo(todo) {
-	var clickedId = todo.data('id');
-	var deleteUrl = 'api/todos/' + clickedId;
+	let clickedId = todo.data('id');
+	let deleteUrl = `api/todos/${clickedId}`;
 	$.ajax({
 		method: 'DELETE',
 		url: deleteUrl
@@ -68,9 +68,9 @@ function removeTodo(todo) {
 }
 
 function updateTodo(todo) {
-	var updateUrl = 'api/todos/' + todo.data('id');
-	var isDone = !todo.data('completed');
-	var updateData = {completed: isDone}
+	let updateUrl = `api/todos/${todo.data('id')}`;
+	let isDone = !todo.data('completed');
+	let updateData = {completed: isDone}
 	$.ajax({
 		method: 'PUT',
 		url: updateUrl,

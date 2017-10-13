@@ -1,7 +1,7 @@
-var express = require('express');
-var router = express.Router();
-var db = require('../models');
-var helpers = require('../helpers/todos');
+let express = require('express');
+let router = express.Router();
+let db = require('../models');
+let helpers = require('../helpers/todos');
 
 router.route('/')
 	.get(helpers.getTodos)

@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
 mongoose.set('debug', true);
 mongoose.connect('mongodb://localhost/todo-api');
 
