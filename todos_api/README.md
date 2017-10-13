@@ -1,6 +1,10 @@
-run mongodb: `mongod --dbpath data` from the root directory.
+A simple todo web application
 
-tutorial did this instead:
+###start mongodb
+
+Run `mongod --dbpath data` from the root directory.
+
+the tutorial did this instead:
 
 `echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod`
 
@@ -8,8 +12,10 @@ and
 
 `chmod a+x mongod`
 
-The first creates a mongod file in the todos_api folder.
+...which creates a mongod file in the todos_api folder. This is not necessary if you use the first command.
 
-start server: `node index.js` from todos_api/ directory.
+###start node server
 
-...or `nodemon index.js` if you have nodemon installed (which automatically restarts the server, yay)
+Run `node index.js` from within the todos_api/ directory.
+
+Alternatively, you can run `nodemon index.js` if you have nodemon installed (which automatically restarts the server, yay).
