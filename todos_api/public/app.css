@@ -3,7 +3,25 @@ h1, h3 {
 }
 
 input {
-	text-align: center;
 	margin: 0 auto;
 	display: block;
+}
+
+.done {
+	text-decoration: line-through;
+	color: #bdc3c7;
+}
+
+li span {
+	float: right;
+	color: red;
+	opacity: 0;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+.task:hover span {
+	opacity: 1;
 }
