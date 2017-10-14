@@ -1,6 +1,6 @@
 A simple todo web application
 
-###start mongodb
+### start mongodb
 
 Run `mongod --dbpath data` from the root directory.
 
@@ -14,7 +14,7 @@ and
 
 ...which creates a mongod file in the todos_api folder. This is not necessary if you use the first command.
 
-###start node server
+### start node server
 
 Run `node index.js` from within the todos_api/ directory.
 
