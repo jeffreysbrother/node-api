@@ -16,6 +16,6 @@ and
 
 ### start node server
 
-Run `node index.js` from within the todos_api/ directory.
+Run `node index.js` from the root directory.
 
 Alternatively, you can run `nodemon index.js` if you have nodemon installed (which automatically restarts the server, yay).
