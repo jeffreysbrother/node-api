@@ -1,18 +1,8 @@
-A simple todo web application
+A simple Node.js todo application
 
 ### start mongodb
 
-Run `mongod --dbpath data` from the root directory.
-
-the tutorial did this instead:
-
-`echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod`
-
-and
-
-`chmod a+x mongod`
-
-...which creates a mongod file in the todos_api folder. This is not necessary if you use the first command.
+Run `mongod --dbpath data` from the root directory after ensuring that there is a data/ folder in the root of the project.
 
 ### start node server
 
